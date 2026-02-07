@@ -12,6 +12,10 @@ organization_url_name: null
 slide: false
 ignorePublish: false
 ---
+
+今回はYOLO26s-segをファインチューニングして、歩行者セグメンテーションと向き推定を同時に行うモデルを獲得してみました。
+ソースコードは[こちら](https://github.com/DaichiKiyozaki/seg-person-dir)です。
+
 ## 背景
 
 ### 従来の構成

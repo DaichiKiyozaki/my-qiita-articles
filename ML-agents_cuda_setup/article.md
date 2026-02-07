@@ -12,7 +12,7 @@ slide: false
 ## 環境
 
 - Windows 11（GPU対応のPC）
-- [ml-agents release22](https://github.com/Unity-Technologies/ml-agents/tree/release_22)
+- [ML-Agents release22](https://github.com/Unity-Technologies/ml-agents/tree/release_22)
 - python3.10
 
 ## 手順

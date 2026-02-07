@@ -54,6 +54,8 @@ def main() -> None:
         for fname in files:
             if not fname.endswith(".md"):
                 continue
+            if fname == "README.md":
+                continue
             fpath = os.path.join(root, fname)
             if convert_file(fpath, raw_base):
                 print(f"Converted: {fpath}")

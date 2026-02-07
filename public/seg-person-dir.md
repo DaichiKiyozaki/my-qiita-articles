@@ -1,5 +1,5 @@
 ---
-title: seg-person-dir
+title: YOLO-segをファインチューニングして「人検知＋向き推定」を1モデルに統合する
 tags:
   - YOLO
   - 画像認識
@@ -12,8 +12,6 @@ organization_url_name: null
 slide: false
 ignorePublish: false
 ---
-# YOLO-segをファインチューニングして「人検知＋向き推定」を1モデルに統合する話
-
 ## 背景
 
 ### 従来の構成

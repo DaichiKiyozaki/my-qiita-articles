@@ -6,7 +6,7 @@ tags:
   - YOLO
   - segmentation
 private: false
-updated_at: '2026-02-08T19:52:24+09:00'
+updated_at: '2026-02-08T20:09:20+09:00'
 id: 0d6c524522faeebb336c
 organization_url_name: null
 slide: false
@@ -68,7 +68,7 @@ YOLO-segは、BBoxだけでなくピクセル単位のマスクも出すイン�
 
 * https://docs.ultralytics.com/models/yolo26/
 
-![yolo26-benchmark](../images/Ultralytics-YOLO26-Benchmark.jpg)
+![yolo26-benchmark](https://raw.githubusercontent.com/DaichiKiyozaki/my-qiita-articles/main/images/Ultralytics-YOLO26-Benchmark.jpg)
 
 
 

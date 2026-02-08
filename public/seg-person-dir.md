@@ -1,13 +1,13 @@
 ---
 title: YOLO-segをファインチューニングして「人検知＋向き推定」を1モデルに統合する
 tags:
-  - YOLO
-  - 画像認識
-  - セグメンテーション
   - Python
+  - 画像認識
+  - YOLO
+  - segmentation
 private: false
-updated_at: ''
-id: null
+updated_at: '2026-02-08T19:13:54+09:00'
+id: 0d6c524522faeebb336c
 organization_url_name: null
 slide: false
 ignorePublish: false
@@ -230,13 +230,13 @@ yolo segment train data=data/dataset_frontback_yoloseg/data.yaml model=yolo26s-s
 
 以下はUltralyticsの学習ログ出力です。最後の方にlossが上がっている箇所はありますが、全体としては学習が進んでいる様子が分かります。
 
-![yolo-ft-results](../images/yolo_ft_results.png)
+![yolo-ft-results](https://raw.githubusercontent.com/DaichiKiyozaki/my-qiita-articles/main/images/yolo_ft_results.png)
 
 ### 推論例
 
 人のマスクに加えて、各インスタンスが「同方向（青）/ 逆方向（赤）」に分類出来ていることが分かります。
 
-![pred_ex](../images/yolo_pred_ex.jpg)
+![pred_ex](https://raw.githubusercontent.com/DaichiKiyozaki/my-qiita-articles/main/images/yolo_pred_ex.jpg)
 
 ※推論例に使った写真は [Unsplash](https://unsplash.com/ja/%E5%86%99%E7%9C%9F/%E6%98%BC%E9%96%93%E6%AD%A9%E8%A1%8C%E8%80%85%E5%B0%82%E7%94%A8%E9%81%93%E8%B7%AF%E3%82%92%E6%AD%A9%E3%81%8F%E7%B7%91%E8%89%B2%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%B1%E3%83%83%E3%83%88%E3%82%92%E7%9D%80%E3%81%9F%E5%A5%B3%E6%80%A7-pzMP-RGJ7mY) からダウンロードしたものです。
 

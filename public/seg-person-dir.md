@@ -217,7 +217,7 @@ MEBOWは、人のキーポイント（姿勢）情報などを手がかりに **
 今回使用した学習コマンドは以下です。
 
 ```bash
-yolo segment train data=data/dataset_frontback_yoloseg/data.yaml model=yolo26s-seg.pt imgsz=512 epochs=50 batch=12 project=./runs/segment name=frontback
+yolo segment train data=data/dataset_frontback_yoloseg/data.yaml model=yolo26s-seg.pt imgsz=512 epochs=100 batch=12
 ```
 
 
@@ -225,7 +225,8 @@ yolo segment train data=data/dataset_frontback_yoloseg/data.yaml model=yolo26s-s
 
 ### 学習結果グラフ
 
-以下は学習ログ出力です。最後の方にlossが上がっている箇所はありますが、全体としては学習が上手く進んでいる様子が分かります。
+以下は学習ログ出力です。
+一部変な動きをしている箇所がありますが、loss（損失）は全体として低下し、検証指標であるmAP50（IoUの閾値を0.50に固定したときの平均AP）も上昇しているため、性能は改善しており学習は概ね順調に進んでいることが分かります。
 
 ![yolo-ft-results](https://raw.githubusercontent.com/DaichiKiyozaki/my-qiita-articles/main/images/yolo_ft_results.png)
 
@@ -235,7 +236,7 @@ yolo segment train data=data/dataset_frontback_yoloseg/data.yaml model=yolo26s-s
 
 ![pred_ex](https://raw.githubusercontent.com/DaichiKiyozaki/my-qiita-articles/main/images/yolo_pred_ex.jpg)
 
-※推論例に使った写真は [Unsplash](https://unsplash.com/ja/%E5%86%99%E7%9C%9F/%E6%98%BC%E9%96%93%E6%AD%A9%E8%A1%8C%E8%80%85%E5%B0%82%E7%94%A8%E9%81%93%E8%B7%AF%E3%82%92%E6%AD%A9%E3%81%8F%E7%B7%91%E8%89%B2%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%B1%E3%83%83%E3%83%88%E3%82%92%E7%9D%80%E3%81%9F%E5%A5%B3%E6%80%A7-pzMP-RGJ7mY) からダウンロードしたものです
+※推論例に使った写真は [Unsplashからダウンロードしたもの](https://unsplash.com/ja/%E5%86%99%E7%9C%9F/%E6%98%BC%E9%96%93%E6%AD%A9%E8%A1%8C%E8%80%85%E5%B0%82%E7%94%A8%E9%81%93%E8%B7%AF%E3%82%92%E6%AD%A9%E3%81%8F%E7%B7%91%E8%89%B2%E3%81%AE%E3%82%B8%E3%83%A3%E3%82%B1%E3%83%83%E3%83%88%E3%82%92%E7%9D%80%E3%81%9F%E5%A5%B3%E6%80%A7-pzMP-RGJ7mY) です
 
 
 ## まとめ

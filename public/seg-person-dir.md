@@ -6,7 +6,7 @@ tags:
   - YOLO
   - segmentation
 private: false
-updated_at: '2026-02-10T14:43:52+09:00'
+updated_at: '2026-02-16T18:48:25+09:00'
 id: 0d6c524522faeebb336c
 organization_url_name: null
 slide: false
@@ -226,7 +226,7 @@ yolo segment train data=data/dataset_frontback_yoloseg/data.yaml model=yolo26s-s
 以下は学習ログ出力です。
 一部変な動きをしている箇所がありますが、loss（損失）は全体として低下し、検証指標であるmAP50（IoUの閾値を0.50に固定したときの平均AP）も上昇しているため、性能は改善しており学習は概ね順調に進んでいることが分かります。
 
-![yolo-ft-results](../images/yolo_ft_result.png)
+![yolo-ft-results](https://raw.githubusercontent.com/DaichiKiyozaki/my-qiita-articles/main/images/yolo_ft_result.png)
 
 ### 推論例
 

@@ -198,8 +198,6 @@ MEBOWは、人のキーポイント（姿勢）情報などを手がかりに **
 * 同方向（クラス0）：$\theta \le 45^\circ$ または $\theta \ge 315^\circ$
 * 逆方向（クラス1）：それ以外
 
-横向きは境界が曖昧になりやすいので、この閾値で割り切っています。
-
 これにより、
 
 * **人マスク**
@@ -228,7 +226,7 @@ yolo segment train data=data/dataset_frontback_yoloseg/data.yaml model=yolo26s-s
 以下は学習ログ出力です。
 一部変な動きをしている箇所がありますが、loss（損失）は全体として低下し、検証指標であるmAP50（IoUの閾値を0.50に固定したときの平均AP）も上昇しているため、性能は改善しており学習は概ね順調に進んでいることが分かります。
 
-![yolo-ft-results](https://raw.githubusercontent.com/DaichiKiyozaki/my-qiita-articles/main/images/yolo_ft_results.png)
+![yolo-ft-results](../images/yolo_ft_result.png)
 
 ### 推論例
 
